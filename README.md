@@ -1,4 +1,4 @@
-I would REALLY appreciate that if you find this tool interesting, mention it in your work and let me know!
+I would REALLY appreciate that if you find this tool interesting, mention it in your work and let me know! <br>
 ✨Happy scraping!✨
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/xctkst44k5o)
