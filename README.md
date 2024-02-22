@@ -129,9 +129,9 @@ The scraper will request you to enter the CSV file path where your URLs are. Thi
 
 ```
 id,url
-38,www.abcd.com
-606,www.hahahaha.com
-947,www.idontknow.com
+38,"www.abcd.com"
+606,"www.hahahaha.com"
+947,"www.idontknow.com"
 ```
 
 
