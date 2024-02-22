@@ -1,0 +1,9 @@
+pandas
+selenium>=4.8.0
+dynaconf
+psycopg2-binary
+lxml
+fake-useragent~=1.2.1
+langdetect
+spacy
+pypdf

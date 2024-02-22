@@ -1,0 +1,3 @@
+[database_parameters]
+connection = {'database' = 'newdata', 'host' = 'localhost', 'user' = 'postgres', 'password' = 'YYYYY', 'port' = '5432'}
+parsed_new_connection = {'database' = 'newmodeling', 'host' = 'localhost', 'user' = 'postgres', 'password' = 'YYYYY', 'port' = '5432'}
