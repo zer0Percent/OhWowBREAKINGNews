@@ -5,7 +5,7 @@ I would REALLY appreciate that if you find this tool interesting, mention it in 
 
 
 # OhWowBREAKINGNews (✨Thread's Version✨)
-OhWowBREAKINGNews (✨Thread's Version✨), is a multithreaded scraper, based on Selenium, that helps you to retrieve the content of news or articles you want by specifying its URL. This tool consists of two parts that are executed separately:
+OhWowBREAKINGNews (✨Thread's Version✨) is a multithreaded scraper, based on Selenium, that helps you to retrieve the content of news or articles you want by specifying its URL. This tool consists of two parts that are executed separately:
 
 1. A scraper that retrieves two formats of the article's HTML: in what we call `raw` format, the entire HTML article and the `reader mode` format, that is, the new's content but opened with the Firefox Reader Mode.
 2. A parser that, given the `raw` and/or `reader` format, extracts all the information from both data sources and stores the information in a PostgreSQL table.
@@ -74,7 +74,8 @@ Once created the table, you should populate it with the script `url_domain.sql`.
 - `is_empty`: Flag that indicates whether the HTML content of URL is empty. <br>
 - `is_retrieved`: Flag that indicates if the URL was retrieved. <br>
 - `parsed`: Flag that indicates whether the new was parsed.<br>
-- `should_rescrape`: Flag that indicates if, after parsing the new, should potentially to be reescraped because `raw` AND `reader` HTML format are empty.
+- `should_rescrape`: Flag that indicates if, after parsing the new, should potentially to be reescraped because `raw` AND `reader` HTML format are empty. <bt>
+- `data_source`: Name of the preloaded dataset
 
 With this, regarding the flag `is_empty` and `is_retrieved`, we have three feasible states of a new (`dbo.raw_new`) or Web Archive timestamp (`dbo.web_archive_new`):
 
@@ -97,7 +98,8 @@ The table `dbo.parsed_new` stores the following information:
 - `language`: Language of the body new<br> 
 - `top_image_url`: The top image URL that appears in the new. <br> 
 - `media_content_urls`: Media content URLs linked to the new. <br> 
-- `is_empty`: Flag that indicates if the parsed new is empty. A new is empty if `title = Null and body = Null and publish_date = Null and authors = Null and top_image_url = Null and media_content_urls = Null`  <br> 
+- `is_empty`: Flag that indicates if the parsed new is empty. A new is empty if `title = Null and body = Null and publish_date = Null and authors = Null and top_image_url = Null and media_content_urls = Null`  <br>
+- `data_source`: Name of the preloaded dataset
 
 ### New's parser
 
