@@ -1,4 +1,6 @@
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/xctkst44k5o)
+I would really APPRECIATE that if you find this tool interesting, mention it in your work and let me know!
+✨Happy scraping!✨
 
 # OhWowBREAKINGNews (✨Thread's Version✨)
 OhWowBREAKINGNews (✨Thread's Version✨), is a multithreaded scraper, based on Selenium, that helps you to retrieve the content of news or articles you want by specifying its URL. This tool consists of two parts that are executed separately:
@@ -163,13 +165,10 @@ In short, `CHUNK_SIZE` splits the entire dataset in lists of `-c` elements and, 
 
 ## New Parser
 
-To run the parser, just run go to the folder `src/news_scraper/parser/new_parser_main.py` and run the following command in your terminal:
+To run the parser, just go to the folder `src/news_scraper/parser/new_parser_main.py` in your terminal and run the following command:
 
 `python new_parser_main.py [-s DATASET_NAME]`
 
 where: <br>
 
 - `-s` The name of the dataset you want to parse.
-
-I would really APPRECIATE that if you find this tool interesting, mention it in your work and let me know!
-Happy scraping!
