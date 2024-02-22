@@ -74,7 +74,7 @@ Once created the table, you should populate it with the script `url_domain.sql`.
 - `is_empty`: Flag that indicates whether the HTML content of URL is empty. <br>
 - `is_retrieved`: Flag that indicates if the URL was retrieved. <br>
 - `parsed`: Flag that indicates whether the new was parsed.<br>
-- `should_rescrape`: Flag that indicates if, after parsing the new, should potentially to be reescraped because `raw` AND `reader` HTML format are empty. <bt>
+- `should_rescrape`: Flag that indicates if, after parsing the new, should potentially to be reescraped because `raw` AND `reader` HTML documents are empty. <bt>
 - `data_source`: Name of the preloaded dataset
 
 With this, regarding the flag `is_empty` and `is_retrieved`, we have three feasible states of a new (`dbo.raw_new`) or Web Archive timestamp (`dbo.web_archive_new`):
