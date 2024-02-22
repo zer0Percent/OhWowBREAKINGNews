@@ -18,7 +18,7 @@ The scraping process is summarized in the following schema
 
 ![Alt text here](new_scraper_schema.png)
 
-Given the new URL, the tool will check if there are any paywall method for the domain of the given URL. If not, it will retrieve all the timestamps stored in Web Archive. If there are timestamps, the tool will look for those Web Archive URLs that gives HTTP status codes in the range of [200-300]. For every URL, we store all the timestamps in order to avoid requesting several times the Web Archive API.
+Given the new URL, the tool will check if there are any paywall method for the domain. If not, it will retrieve all the timestamps stored in Web Archive. If there are timestamps, the tool will look for those Web Archive URLs that gives HTTP status codes in the range of [200-300]. For every URL, we store all the timestamps in order to avoid requesting several times the Web Archive API.
 If there is a paywall, it will retrieve the paywall method to apply from our local database `newmodeling` and then it will convert the original URL to a specific format regarding the paywall method.
 
 If there is not timestamps, the tool will try to access and scrape the input URL.
