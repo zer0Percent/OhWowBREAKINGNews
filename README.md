@@ -165,7 +165,11 @@ In short, `CHUNK_SIZE` splits the entire dataset in lists of `-c` elements and, 
 
 To run the parser, just run go to the folder `src/news_scraper/parser/new_parser_main.py` and run the following command in your terminal:
 
-`python new_parser_main.py`
+`python new_parser_main.py [-s DATASET_NAME]`
+
+where: <br>
+
+- `-s` The name of the dataset you want to parse.
 
 I would really APPRECIATE that if you find this tool interesting, mention it in your work and let me know!
 Happy scraping!

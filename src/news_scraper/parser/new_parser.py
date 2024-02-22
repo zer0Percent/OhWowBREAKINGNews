@@ -230,7 +230,7 @@ class NewParser:
             
             date_sliced: str = date_not_parsed[2:14]
             date: datetime = datetime.strptime(date_sliced, '%Y%m%d%H%M%S')
-            formatted_date: str = date.strftime('%Y-%m-%d %H:%M')
+            formatted_date: str = date.strftime(parser_constants.DATE_FORMAT)
 
             return formatted_date
         except Exception as e:
